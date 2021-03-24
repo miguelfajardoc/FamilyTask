@@ -1,3 +1,5 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import User, GeneralTask, Family, Rol, AsignedTask
+
+admin.site.register([User, GeneralTask, Family, Rol, AsignedTask])
