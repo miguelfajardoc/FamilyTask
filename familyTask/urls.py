@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from familyTaskAPI import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('families/', views.FamilyView.as_view())
 ]
