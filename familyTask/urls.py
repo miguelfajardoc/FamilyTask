@@ -19,5 +19,6 @@ from familyTaskAPI import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('families/', views.FamilyView.as_view())
+    path('families/', views.FamilyView.as_view()),
+    path('families/<int:family_id>/', views.FamilyUpdateDeleteView.as_view())
 ]
